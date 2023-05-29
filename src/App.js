@@ -1,7 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const onClick = () => {
+    console.log("test");
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <button onClick={onClick}>Bisa diklik</button>
     </div>
   );
 }
